@@ -20,6 +20,33 @@ en:
     total: "Total:"
     delete: "delete"
     price: "Price"
+    title_admin:
+      image: "Image"
+      name: "Name"
+      type: "Type Field"
+      time: "Time"
+      code: "Code Field"
+    detail_booking:
+      detail: "Detail booking"
+      status: "Status:"
+      date_booking: "Date of booking:"
+      time_booking: "Time of booking:"
+      name_booking: "Name of booking:"
+      phone_booking: "Phone of booking:"
+      field: "Field:"
+      time: "Time slot:"
+      code: "Field code:"
+      cost: "Field cost:"
+      btn_submit: "Accept"
+      btn_cancel: "Reject"
+      btn_exit: "Exit"
+    btn_handle: "Handle"
+    btn_view: "View"
+    status:
+      pending: "Pending"
+      accept: "Accept"
+      rejected: "Rejected"
+      cancel: "Cancel"
 
   login:
     name: "Login"
@@ -58,3 +85,14 @@ en:
     error_messages:
       contains: The form contains %{errors}
       error: "error"
+
+  menu_manager:
+    title: "Feature"
+    booking_field: "Booking Field Management"
+    user: "User Management"
+    revenue: "Revenue Management"
+    field: "Field Management"
+
+  message:
+    pls_login: "You must be logged in to use the system."
+    is_admin: "You are not an admin so you cannot use this function."

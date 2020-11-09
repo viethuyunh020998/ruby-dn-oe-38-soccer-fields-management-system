@@ -6,5 +6,9 @@ Rails.application.routes.draw do
     get "/order", to: "static_pages#order"
     get "signup", to: "users#new"
     resources :users, only: %i(new create)
+
+    namespace :admin do
+      resources :bookings, only: :index
+    end
   end
 end
