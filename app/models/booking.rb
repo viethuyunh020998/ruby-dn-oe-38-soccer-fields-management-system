@@ -16,4 +16,8 @@ class Booking < ApplicationRecord
   def location
     time_cost&.yard&.location
   end
+
+  def update_status status
+    update_column(:status, status)
+  end
 end

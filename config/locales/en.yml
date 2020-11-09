@@ -96,3 +96,7 @@ en:
   message:
     pls_login: "You must be logged in to use the system."
     is_admin: "You are not an admin so you cannot use this function."
+    update_booking:
+      not_exist_id: "Order id not found!"
+      update_sucess: "Order processing successfully!"
+      update_fail: "Order processing failed!"

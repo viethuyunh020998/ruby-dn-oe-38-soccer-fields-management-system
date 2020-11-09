@@ -33,15 +33,15 @@
                     <h5><%= t "booking.detail_booking.time_booking" %> <%= booking&.created_at.strftime("%k:%M") %></h5>
                     <h5><%= t "booking.detail_booking.name_booking" %> <%= booking&.user.name %></h5>
                     <h5><%= t "booking.detail_booking.phone_booking" %> <%= booking&.user.phone %></h5>
-                    <h5><%= t "booking.detail_booking.field" %> <%=booking&.location_name %></h5>
+                    <h5><%= t "booking.detail_booking.field" %> <%= booking&.location_name %></h5>
                     <h5><%= t "booking.detail_booking.time" %> <%= booking&.time_cost_time %></h5>
                     <h5><%= t "booking.detail_booking.code" %> <%= booking&.yard_code %></h5>
                     <h5><%= t "booking.detail_booking.cost" %> <%= booking&.time_cost_cost %></h5>
                   </div>
                   <div class="modal-footer">
                     <% if booking.pending? %>
-                      <%= button_tag t("booking.detail_booking.btn_submit"), type: "button", class: "btn btn-primary" %>
-                      <%= button_tag t("booking.detail_booking.btn_cancel"), type: "button", class: "btn btn-danger" %>
+                      <%= button_tag t("booking.detail_booking.btn_submit"), type: "button", class: "btn btn-primary handle-request-booking", data: {id: "#{booking.id}", stt: "accept"} %>
+                      <%= button_tag t("booking.detail_booking.btn_cancel"), type: "button", class: "btn btn-danger handle-request-booking", data: {id: "#{booking.id}", stt: "rejected"} %>
                     <% end %>
                     <%= button_tag t("booking.detail_booking.btn_exit"), type: "button", class: "btn btn-secondary", data: {dismiss: "modal"} %>
                   </div>
