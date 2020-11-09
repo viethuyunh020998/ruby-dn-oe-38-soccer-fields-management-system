@@ -11,6 +11,7 @@ vi:
     phone: "Số điện thoại: "
     previous: "Trước"
     next: "Sau"
+    option: "Tùy chọn"
 
   booking:
     name: "Đặt sân"
@@ -20,6 +21,8 @@ vi:
     total: "Tổng cộng:"
     delete: "Xóa"
     price: "Giá tiền"
+    edit: "Sửa"
+    new: "Thêm mới"
     title_admin:
       image: "Hình Ảnh"
       name: "Tên Sân"
@@ -80,6 +83,7 @@ vi:
       confirmation: "Xac nhan mat khau"
       phone: "So dien thoai"
       createAccount: "Tao tai khoan"
+
   shared:
     error_messages:
       contains: The form contains %{errors}

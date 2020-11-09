@@ -11,6 +11,7 @@ en:
     phone: "Number phone: "
     previous: "Previous"
     next: "Next"
+    option: "Option"
 
   booking:
     name: "Booking"
@@ -20,6 +21,8 @@ en:
     total: "Total:"
     delete: "delete"
     price: "Price"
+    edit: "Edit"
+    new: "New"
     title_admin:
       image: "Image"
       name: "Name"
@@ -47,7 +50,6 @@ en:
       accept: "Accept"
       rejected: "Rejected"
       cancel: "Cancel"
-
   login:
     name: "Login"
 
@@ -71,15 +73,16 @@ en:
     hs: "Hoang Sa Archipelago"
   user:
     create:
-      success: "Create Success"
-      unsuccess: " Create Account Unsuccess"
+      success: "Account successfully created"
+      unsuccess: "Account creation failed"
+
   users:
     new:
-      title: "Sigup"
-      h1: "Signup"
-      confirmation: "Password Confirmation"
-      phone: "Number Phone"
-      createAccount: "Create Account"
+      title: "Registration"
+      h1: "Regiter"
+      confirmation: "Confirm password"
+      phone: "Number phone"
+      createAccount: "Create account"
 
   shared:
     error_messages:
