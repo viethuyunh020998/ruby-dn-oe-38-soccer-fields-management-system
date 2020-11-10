@@ -22,6 +22,11 @@ vi:
     logout: "Đăng xuất"
     user: "Người dùng"
 
+    account: "Tài khoản"
+    profile: "Người dùng"
+    setting: "Cài đặt"
+    logout: "Đăng xuất"
+    user: "Người dùng"
   booking:
     name: "Đặt sân"
     yard_name: "Tên sân"
@@ -123,6 +128,22 @@ vi:
         phone: "Số điện thoại"
         createAccount: "Tạo tài khoản"
 
+  show:
+    about: "Thông tin"
+    userid: "User Id"
+    name: "Tên"
+    email: "Địa chỉ Email"
+    phone: "Số điện thoại"
+    changeima: "Thay đổi ảnh"
+  edit:
+    title: "Chinh Sua"
+    h1: "Chinh Sua"
+    savechange: "Luu Thay doi"
+  index:
+    title: "Danh sách người dùng"
+    h1: "Danh sách người dùng"
+    delete: "Xóa"
+    sure: "Bạn chắc chắn"
   shared:
     error_messages:
       contains: "Biểu mẫu chứa %{errors}"

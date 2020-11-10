@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
     get "pages/search", to: "pages#search", as: "search_page"
-    resources :users, except: %i(destroy index )
+    resources :users, except: %i(destroy index)
     resources :static_pages, only: %i(index show)
 
     namespace :admin do

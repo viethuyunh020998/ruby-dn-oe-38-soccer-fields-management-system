@@ -6,6 +6,13 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def show
+    return if @user
+
+    flash[:warning] = t "show.warning"
+    redirect_to login_path
+  end
+
   def create
     @user = User.new user_params
     if @user.save
