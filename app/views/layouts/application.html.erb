@@ -15,7 +15,9 @@
     <%= render "layouts/header" %>
     <div class="container">
       <div class="row">
-        <%= render "layouts/location" %>
+        <% unless current_page? (login_path) && (signup_path) && (users_path) %>
+          <%= render "layouts/location" %>
+        <% end %>
         <%= yield %>
       </div>
     </div>

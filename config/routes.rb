@@ -5,6 +5,9 @@ Rails.application.routes.draw do
     get "/detail", to: "static_pages#detail"
     get "/order", to: "static_pages#order"
     get "signup", to: "users#new"
-    resources :users, only: %i(new create)
+    get "/login", to: "sessions#new"
+    post "/login", to: "sessions#create"
+    delete "/logout", to: "sessions#destroy"
+    resources :users, except: %i(destroy)
   end
 end

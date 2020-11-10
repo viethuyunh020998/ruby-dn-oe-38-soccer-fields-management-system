@@ -11,7 +11,10 @@ en:
     phone: "Number phone: "
     previous: "Previous"
     next: "Next"
-
+    account: "Account"
+    profile: "Profile"
+    setting: "Setting"
+    logout: "Logout"
   booking:
     name: "Booking"
     yard_name: "Yard Name"
@@ -42,19 +45,55 @@ en:
     cl: "Cam Le District"
     hv: "Hoa Vang District"
     hs: "Hoang Sa Archipelago"
+
+  app_contro:
+    danger: "User not found"
   user:
     create:
       success: "Create Success"
       unsuccess: " Create Account Unsuccess"
+
+
   users:
     new:
-      title: "Sigup"
-      h1: "Signup"
-      confirmation: "Password Confirmation"
-      phone: "Number Phone"
-      createAccount: "Create Account"
+      newu:
+        title: "Sigup"
+        h1: "Signup"
+        confirmation: "Password Confirmation"
+        phone: "Number Phone"
+        createAccount: "Create Account"
+  show:
+    about: "Information"
+    userid: "User Id"
+    name: "Name"
+    email: "Email Address"
+    phone: "Phone Number"
+    changeima: "Change image"
+  edit:
+    title: "Edit"
+    h1: "Edit Form"
+    savechange: "Save change"
 
-  shared:
-    error_messages:
-      contains: The form contains %{errors}
-      error: "error"
+  index:
+    title: "All users"
+    h1: "All Users"
+
+  asession:
+    show:
+      warning: "No user found"
+
+  sessions:
+    new:
+      news:
+        title: "Log in"
+        h1: "Log in"
+        password: "Password"
+        login: "Login"
+        newuser: "New User?"
+        signup: "Signup"
+        remember: "Remember me"
+        email: "Email address"
+        password: "Password"
+        or: "OR"
+        facebook: "Sign in with Facebook"
+        google: "Sign in with Google"

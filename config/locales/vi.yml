@@ -11,7 +11,10 @@ vi:
     phone: "Số điện thoại: "
     previous: "Trước"
     next: "Sau"
-
+    account: "Tai khoan"
+    profile: "Thong tin"
+    setting: "cai dat"
+    logout: "Logout"
   booking:
     name: "Đặt sân"
     yard_name: "Tên sân"
@@ -42,18 +45,50 @@ vi:
     cl: "Quận Cẩm Lệ"
     hv: "Huyện Hoà Vang"
     hs: "Quần đảo Hoàng Sa"
+
+  app_contro:
+    danger: "không tìm thấy Người dùng"
+
   user:
     create:
-      success: "Tao tai khoan thanh cong"
-      unsuccess: " Tao tai khoan khong thanh cong"
+      success: "Tạo tài khoản thành công"
+      unsuccess: " Tạo tài khoản không thành công"
   users:
     new:
-      title: "Dang ki"
-      h1: "Dang ki"
-      confirmation: "Xac nhan mat khau"
-      phone: "So dien thoai"
-      createAccount: "Tao tai khoan"
+      newu:
+        title: "Đăng kí"
+        h1: "Đăng kí"
+        confirmation: "Xác nhận mật khẩu"
+        phone: "Số điện thoại"
+        createAccount: "Tạo tài khoản"
+  show:
+    about: "Thông tin"
+    userid: "User Id"
+    name: "Tên"
+    email: "Địa chỉ Email"
+    phone: "Số điện thoại"
+    changeima: "Thay đổi ảnh"
+  edit:
+    title: "Chinh Sua"
+    h1: "Chinh Sua"
+    savechange: "Luu Thay doi"
   shared:
     error_messages:
-      contains: The form contains %{errors}
-      error: "error"
+      conrains: "Biểu mẫu chứa %{errors}"
+      error: "lỗi"
+  assession:
+    show: "khong tim thay nguoi dung"
+  sessions:
+    new:
+      news:
+        title: "Đăng Nhập"
+        h1: "Đăng Nhập"
+        login: "Đăng Nhập"
+        newuser: "Người dùng mới"
+        signup: "Đăng kí"
+        remember: "Ghi nhớ mật khẩu"
+        email: "địa chỉ email"
+        password: "Mật Khẩu"
+        or: "Hoặc"
+        facebook: "Đăng nhập bằng Facebook"
+        google: "Đăng nhập bằng  Google"
