@@ -1,0 +1,5 @@
+model:
+  user:
+    email_max: 255
+    name_max: 50
+    password_mini: 6

@@ -42,3 +42,18 @@ vi:
     cl: "Quận Cẩm Lệ"
     hv: "Huyện Hoà Vang"
     hs: "Quần đảo Hoàng Sa"
+  user:
+    create:
+      success: "Tao tai khoan thanh cong"
+      unsuccess: " Tao tai khoan khong thanh cong"
+  users:
+    new:
+      title: "Dang ki"
+      h1: "Dang ki"
+      confirmation: "Xac nhan mat khau"
+      phone: "So dien thoai"
+      createAccount: "Tao tai khoan"
+  shared:
+    error_messages:
+      contains: The form contains %{errors}
+      error: "error"
