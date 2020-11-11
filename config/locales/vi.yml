@@ -1,3 +1,44 @@
 vi:
   base:
-    title: "Dự án 1"
+    title: "Đặt sân bóng nào !!!"
+    name: "Sân bóng đá"
+    location: "Vị trí"
+    cancel: "Hủy bỏ"
+
+  home:
+    name: "Trang chủ"
+    address: "Địa chỉ: "
+    phone: "Số điện thoại: "
+    previous: "Trước"
+    next: "Sau"
+
+  booking:
+    name: "Đặt sân"
+    yard_name: "Tên sân"
+    yard_code: "Mã sân"
+    yard_type: "Loại sân"
+    total: "Tổng cộng:"
+    delete: "Xóa"
+    price: "Giá tiền"
+
+  login:
+    name: "Đăng nhập"
+
+  detail:
+    choose: "Chọn sân"
+    date: "Ngày"
+    time: "Thời gian"
+    type: "Loại sân"
+    comment: "Bình luận"
+    reply: "Trả lời"
+    name: "Chi tiết"
+
+  district:
+    tk: "Quận Thanh Khê"
+    st: "Quận Sơn Trà"
+    nhs: "Quận Ngũ Hành Sơn"
+    lc: "Quận Liên Chiểu"
+    hc: "Quận Hải Châu"
+    cl: "Quận Cẩm Lệ"
+    hv: "Huyện Hoà Vang"
+    hs: "Quần đảo Hoàng Sa"

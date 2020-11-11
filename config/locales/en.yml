@@ -1,3 +1,44 @@
 en:
   base:
-    title: "Project 1"
+    title: "Let's order a football field !!!"
+    name: "Football Yard"
+    location: "Location"
+    cancel: "Cancel"
+
+  home:
+    name: "Home"
+    address: "Address: "
+    phone: "Number phone: "
+    previous: "Previous"
+    next: "Next"
+
+  booking:
+    name: "Booking"
+    yard_name: "Yard Name"
+    yard_code: "Yard Code"
+    yard_type: "Yard Type"
+    total: "Total:"
+    delete: "delete"
+    price: "Price"
+
+  login:
+    name: "Login"
+
+  detail:
+    choose: "Choose the yard"
+    date: "Date"
+    time: "Time"
+    type: "Type"
+    comment: "Comment"
+    reply: "reply"
+    name: "Detail"
+
+  district:
+    tk: "Thanh Khe District"
+    st: "Son Tra District"
+    nhs: "Ngu Hanh Son District"
+    lc: "Lien Chieu District"
+    hc: "Hai Chau District"
+    cl: "Cam Le District"
+    hv: "Hoa Vang District"
+    hs: "Hoang Sa Archipelago"
