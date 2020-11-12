@@ -3,7 +3,7 @@ class CreateYards < ActiveRecord::Migration[6.0]
     create_table :yards do |t|
       t.references :location, null: false, foreign_key: true
       t.string :code
-      t.integer :type
+      t.integer :type_yard
 
       t.timestamps
     end

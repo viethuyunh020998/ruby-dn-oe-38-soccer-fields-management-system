@@ -75,11 +75,12 @@ ActiveRecord::Schema.define(version: 2020_11_10_084136) do
     t.string "name"
     t.string "email"
     t.string "phone"
-    t.string "pass_digest"
+    t.string "password_digest"
     t.string "remember_digest"
     t.integer "role", default: 0, null: false
     t.string "activation_digest"
-    t.boolean "actived"
+    t.boolean "actived", default: false, null: false
+    t.datetime "actived_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -87,7 +88,7 @@ ActiveRecord::Schema.define(version: 2020_11_10_084136) do
   create_table "yards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "location_id", null: false
     t.string "code"
-    t.integer "type"
+    t.integer "type_yard"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["location_id"], name: "index_yards_on_location_id"
