@@ -42,3 +42,19 @@ en:
     cl: "Cam Le District"
     hv: "Hoa Vang District"
     hs: "Hoang Sa Archipelago"
+  user:
+    create:
+      success: "Create Success"
+      unsuccess: " Create Account Unsuccess"
+  users:
+    new:
+      title: "Sigup"
+      h1: "Signup"
+      confirmation: "Password Confirmation"
+      phone: "Number Phone"
+      createAccount: "Create Account"
+
+  shared:
+    error_messages:
+      contains: The form contains %{errors}
+      error: "error"
