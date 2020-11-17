@@ -17,7 +17,7 @@ Rails.application.routes.draw do
     end
 
     namespace :user do
-      resources :bookings, only: %i(index show create)
+      resources :bookings, only: %i(index create update)
       get "seach_yard_for_booking", to: "bookings#seach_yard_for_booking"
     end
   end

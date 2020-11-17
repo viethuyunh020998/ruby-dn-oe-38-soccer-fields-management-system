@@ -169,6 +169,10 @@ en:
       update_fail: "Order processing failed!"
       contains: "The form contains %{errors}"
       error: "error"
+      check_current_user: "This course is not reserved by you so you do not have the right to cancel it"
+      check_status: "Orders have been processed by the admin"
+      check_status_edit: "You are not allowed to edit the system data"
+      check_booking_user: "You have not booked this course so you cannot update it"
     show_field:
       not_exist_yard: "Field is not found!"
     booking:
@@ -177,6 +181,7 @@ en:
       booking_fail: "Booking failed"
       booking_succ_mess: "Thank you for choosing our soccer field!"
       booking_fail_mess: "There was an error in the system, please try again later!"
+      booking_logic: "You cannot make a reservation before the current time"
 
   asession:
     show:

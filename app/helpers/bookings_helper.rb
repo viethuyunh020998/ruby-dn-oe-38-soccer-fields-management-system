@@ -24,4 +24,13 @@ module BookingsHelper
       "active"
     end
   end
+
+  def greater_than_date_now? date_booking
+    Time.zone.today >= date_booking
+  end
+
+  def greater_than_hour_now? hour
+    hour = hour.to_s.split("-").map(&:to_i)[0]
+    Time.zone.now.hour < hour
+  end
 end

@@ -11,4 +11,3 @@ require("jquery")
 import "bootstrap"
 import "application/sweet-alert-confirm"
 require("packs/reply")
-require("packs/handle_request_booking")

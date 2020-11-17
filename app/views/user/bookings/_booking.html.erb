@@ -31,8 +31,9 @@
             <h5><%= t "booking.detail_booking.cost" %> <%= booking&.time_cost_cost %> VND</h5>
           </div>
           <div class="modal-footer">
-            <% unless booking.cancel? || booking.rejected? %>
-              <%= button_tag t("booking.detail_booking.btn_cancel"), type: "button", class: "btn btn-danger" %>
+            <% if booking.pending? %>
+              <%= button_tag t("booking.detail_booking.btn_cancel"), type: "button", class: "btn btn-danger handle-cancel-booking",
+                data: {id: "#{booking.id}", stt: "cancel"} %>
             <% end %>
             <%= button_tag t("booking.detail_booking.btn_exit"), type: "button", class: "btn btn-secondary", data: {dismiss: "modal"} %>
           </div>
