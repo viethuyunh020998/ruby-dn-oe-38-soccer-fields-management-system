@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
   def login user
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-    redirect_back_or user
+    redirect_back_or root_path
   end
 
   def check_login
