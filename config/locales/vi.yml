@@ -95,3 +95,7 @@ vi:
   message:
     pls_login: "Bạn phải đăng nhập mới sử dụng được hệ thống"
     is_admin: "Bạn không phải là admin nên không dùng được chức năng này"
+    update_booking:
+      not_exist_id: "Không tìm thấy id đơn hàng"
+      update_sucess: "Xử lý đơn hàng thành công"
+      update_fail: "Xử lý đơn hàng thất bại"

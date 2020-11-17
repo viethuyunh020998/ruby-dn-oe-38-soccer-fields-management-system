@@ -10,6 +10,7 @@ require("channels")
 require("jquery")
 import "bootstrap"
 require("packs/reply")
+require("packs/handle_request_booking")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
