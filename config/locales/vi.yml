@@ -32,6 +32,7 @@ vi:
     price: "Giá tiền"
     edit: "Sửa"
     new: "Thêm mới"
+    search: "Tìm kiếm"
     title_admin:
       image: "Hình Ảnh"
       name: "Tên Sân"
@@ -182,6 +183,9 @@ vi:
       passcofi: "Xác nhận mật khẩu"
       phone: "Số điện thoại"
       image: "Ảnh đại diện"
+  assession:
+    show:
+      danger: "Không tìm thấy người dùng"
 
   sessions:
     new:

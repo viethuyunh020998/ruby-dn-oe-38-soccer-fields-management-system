@@ -7,7 +7,12 @@ class Booking < ApplicationRecord
   delegate :code, :type_yard, to: :yard, prefix: true
 
   enum status: {pending: 0, accept: 1, rejected: 2, cancel: 3}
+
   scope :status_asc, ->{order status: :asc}
+  scope :find_date_booking, (lambda do |timecost_ids, date|
+    where("time_cost_id IN (?) AND booking_date = ?
+    AND status = ?", timecost_ids, date, Booking.statuses[:accept])
+  end)
 
   def yard
     time_cost&.yard

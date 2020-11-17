@@ -6,7 +6,10 @@ class StaticPagesController < ApplicationController
                             per_page: Settings.paginate.home)
   end
 
-  def show; end
+  def show
+    yards =  @location.yards.pluck(:id)
+    @times = TimeCost.all_time(yards).pluck(:time)
+  end
 
   private
 

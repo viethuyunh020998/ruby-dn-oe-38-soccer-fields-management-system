@@ -25,4 +25,11 @@ class ApplicationController < ActionController::Base
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
     redirect_back_or user
   end
+
+  def check_login
+    return if logged_in?
+
+    flash[:warning] = t "message.pls_login"
+    redirect_to login_path
+  end
 end

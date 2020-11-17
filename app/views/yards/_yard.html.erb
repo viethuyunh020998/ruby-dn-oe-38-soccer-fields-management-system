@@ -1,0 +1,5 @@
+<% if @booked.include?(yard.id) %>
+  <%= button_tag yard.yard.code, type: "button", class: "col-2 btn btn-danger m-2", data:{id:yard.id} %>
+<% else %>
+  <%= button_tag yard.yard.code, type: "button", class: "col-2 btn btn-primary m-2", data:{id:yard.id} %>
+<% end %>
