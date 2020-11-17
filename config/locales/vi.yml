@@ -20,6 +20,7 @@ vi:
     setting: "Cài đặt"
     logout: "Đăng xuất"
     user: "Người dùng"
+
   booking:
     name: "Đặt sân"
     yard_name: "Tên sân"
@@ -83,6 +84,7 @@ vi:
 
   app_contro:
     danger: "không tìm thấy Người dùng"
+
   user_model:
     error_type: "phải là PNG hoặc JPG"
     error_size: "là hơn 1MB"
@@ -90,16 +92,22 @@ vi:
   create:
     success: "Tạo tài khoản thành công"
     unsuccess: " Tạo tài khoản không thành công"
+
   show:
     warning: "Người dùng không tồn tại"
+
   update:
     success: "Hồ sơ cá nhân đã cập nhật"
+
   destroy:
     success: "Người dùng đã bị xóa"
+
   load_user:
     warning: "Không tìm thấy người dùng!"
+
   log_in:
     danger: "Vui lòng hãy đăng nhập !"
+
   users:
     new:
       newu:
@@ -108,26 +116,30 @@ vi:
         confirmation: "Xác nhận mật khẩu"
         phone: "Số điện thoại"
         createAccount: "Tạo tài khoản"
+
+  shared:
+    error_messages:
+      contains: "Biểu mẫu chứa %{errors}"
+      error: "lỗi"
+
   show:
     about: "Thông tin"
-    userid: "User Id"
+    userid: "Id người dùng"
     name: "Tên"
     email: "Địa chỉ Email"
     phone: "Số điện thoại"
     changeima: "Thay đổi ảnh"
+
   edit:
-    title: "Chinh Sua"
-    h1: "Chinh Sua"
-    savechange: "Luu Thay doi"
+    title: "Chỉnh sửa"
+    h1: "Chỉnh sử biểu mẫu"
+    savechange: "Lưu thay đổi"
+
   index:
     title: "Danh sách người dùng"
     h1: "Danh sách người dùng"
     delete: "Xóa"
     sure: "Bạn chắc chắn"
-  shared:
-    error_messages:
-      contains: The form contains %{errors}
-      error: "error"
 
   menu_manager:
     title: "Tính năng"
@@ -146,10 +158,14 @@ vi:
       not_exist_id: "Không tìm thấy id đơn hàng"
       update_sucess: "Xử lý đơn hàng thành công"
       update_fail: "Xử lý đơn hàng thất bại"
-      conrains: "Biểu mẫu chứa %{errors}"
+      contains: "Biểu mẫu chứa %{errors}"
       error: "lỗi"
+    show_field:
+      not_exist_yard: "Không tìm thấy id sân bóng!"
+
   assession:
-    show: "khong tim thay nguoi dung"
+    show: "Không tìm thấy nguwofi dùng"
+
   sessions:
     new:
       news:
