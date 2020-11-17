@@ -36,6 +36,7 @@ class User::BookingsController < UserController
   def update
     respond_to do |format|
       if @booking.update_status params[:stt]
+        send_mail_when_update
         format.json{render json: @booking, status: :created}
       else
         format.json{render status: :unprocessable_entity}
@@ -65,10 +66,21 @@ class User::BookingsController < UserController
       data[:success] = true
       data[:title] = t "message.booking.booking_succ"
       data[:content] = t "message.booking.booking_succ_mess"
+      send_mail_when_booking
     else
       data[:title] = t "message.booking.booking_fail"
       data[:content] = t "message.booking.booking_fail_mess"
     end
+  end
+
+  def send_mail_when_booking
+    @user = User.admin[0]
+    @user&.send_notify_booking_to_user_email(@booking) if @user
+  end
+
+  def send_mail_when_update
+    @user = User.admin[0]
+    @user&.send_notify_cancel_by_user_email(@booking) if @user
   end
 
   def load_booking

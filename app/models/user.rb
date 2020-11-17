@@ -81,6 +81,26 @@ class User < ApplicationRecord
     update_column :remember_digest, nil
   end
 
+  def send_notify_booking_to_user_email booking
+    UserMailer.booking_to_user(self, booking).deliver_now
+  end
+
+  def send_notify_cancel_by_user_email booking
+    UserMailer.cancel_booking_by_user(self, booking).deliver_now
+  end
+
+  def send_notify_cancel_by_admin_email booking
+    UserMailer.cancel_booking_by_admin(self, booking).deliver_now
+  end
+
+  def send_notify_accept_to_user_email booking
+    UserMailer.accept_booking_to_user(self, booking).deliver_now
+  end
+
+  def send_notify_reject_to_user_email booking
+    UserMailer.reject_booking_to_user(self, booking).deliver_now
+  end
+
   private
 
   def downcase_email

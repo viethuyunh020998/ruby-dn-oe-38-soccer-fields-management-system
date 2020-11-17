@@ -26,7 +26,7 @@ module BookingsHelper
   end
 
   def greater_than_date_now? date_booking
-    Time.zone.today >= date_booking
+    Time.zone.today <= date_booking
   end
 
   def greater_than_hour_now? hour
