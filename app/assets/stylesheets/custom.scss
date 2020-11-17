@@ -192,10 +192,6 @@ th:nth-child(1) span {
   cursor: pointer;
 }
 
-td:nth-child(2) {
-  height: 100px;
-}
-
 td:nth-child(2) .box-img {
   border: 1px solid;
   width: 90px;
@@ -214,6 +210,7 @@ td:nth-child(2) .box-img {
   justify-content: flex-end;
   padding-right: 10px;
 }
+
 
 /* universal */
 body {
@@ -375,4 +372,7 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+.img-booking{
+  width: 100px;
 }
