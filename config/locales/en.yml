@@ -13,6 +13,7 @@ en:
     next: "Next"
     option: "Option"
     description: "Description"
+    save: "Save"
 
   booking:
     name: "Booking"
@@ -101,7 +102,8 @@ en:
   message:
     pls_login: "You must be logged in to use the system."
     is_admin: "You are not an admin so you cannot use this function."
-    add_location: "Add new successfully"
+    update_location: "locations was updated."
+    update_fail: "Update fail"
     fail: "Unable to execute request, try again"
     update_booking:
       not_exist_id: "Order id not found!"
