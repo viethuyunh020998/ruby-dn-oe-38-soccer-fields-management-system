@@ -1,0 +1,10 @@
+<tr>
+  <td> <%= location.name %> </td>
+  <td> <%= location.phone %> </td>
+  <td> <%= location.address %> </td>
+  <td>
+    <%= button_tag( t("detail.name"), class: "btn btn-primary" )%>
+    <%= button_tag( t("booking.edit"), class: "btn btn-primary" )%>
+    <%= button_tag( t("booking.delete"), class: "btn btn-danger" )%>
+  </td>
+</tr>
