@@ -12,6 +12,7 @@ en:
     previous: "Previous"
     next: "Next"
     option: "Option"
+    description: "Description"
 
   booking:
     name: "Booking"
@@ -63,6 +64,7 @@ en:
     name: "Detail"
 
   district:
+    name: "District"
     tk: "Thanh Khe District"
     st: "Son Tra District"
     nhs: "Ngu Hanh Son District"
@@ -99,6 +101,8 @@ en:
   message:
     pls_login: "You must be logged in to use the system."
     is_admin: "You are not an admin so you cannot use this function."
+    add_location: "Add new successfully"
+    fail: "Unable to execute request, try again"
     update_booking:
       not_exist_id: "Order id not found!"
       update_sucess: "Order processing successfully!"
