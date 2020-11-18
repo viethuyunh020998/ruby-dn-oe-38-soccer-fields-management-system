@@ -12,7 +12,8 @@ vi:
     previous: "Trước"
     next: "Sau"
     option: "Tùy chọn"
-    description: "Mô tả"
+    description: "Đặc tả"
+    save: "Lưu"
 
   booking:
     name: "Đặt sân"
@@ -101,7 +102,8 @@ vi:
   message:
     pls_login: "Bạn phải đăng nhập mới sử dụng được hệ thống"
     is_admin: "Bạn không phải là admin nên không dùng được chức năng này"
-    add_location: "Thêm mới thành công"
+    update_location: "Địa điểm đã được cập nhật."
+    update_fail: "Cập nhật thất bại"
     fail: "Không thể thực hiện yêu cầu, thử lại"
     update_booking:
       not_exist_id: "Không tìm thấy id đơn hàng"

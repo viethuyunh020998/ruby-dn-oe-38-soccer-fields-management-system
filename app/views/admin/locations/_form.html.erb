@@ -1,4 +1,4 @@
-<%= form_for([:admin, @location]) do |l|%>
+<%= form_for([:admin, @location]) do |l| %>
   <%= render "shared/error_messages.html.erb", object: l.object %>
   <%= l.label :name, t("booking.yard_name") %>
   <%= l.text_field :name, class: "form-control" %>
@@ -10,5 +10,5 @@
   <%= l.text_field :distric, class: "form-control" %>
   <%= l.label :description, t("home.description") %>
   <%= l.text_field:description, class: "form-control" %>
-  <%= l.submit t("booking.new"), class: "btn btn-primary" %>
+  <%= l.submit t("home.save"), class: "btn btn-primary" %>
 <% end %>
