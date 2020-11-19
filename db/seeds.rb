@@ -46,7 +46,7 @@ end
   Location.create!(name:name,
   phone:phone,
   address:address,
-  distric:district.sample,
+  district:district.sample,
   description:description)
 end
 

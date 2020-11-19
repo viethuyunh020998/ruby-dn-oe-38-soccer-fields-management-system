@@ -4,6 +4,7 @@ en:
     name: "Football Yard"
     location: "Location"
     cancel: "Cancel"
+    search: "Search Soccer Field"
 
   home:
     name: "Home"
@@ -14,7 +15,12 @@ en:
     option: "Option"
     description: "Description"
     save: "Save"
-
+    login: "Login"
+    account: "Account"
+    profile: "Profile"
+    setting: "Setting"
+    logout: "Logout"
+    user: "User"
   booking:
     name: "Booking"
     yard_name: "Yard Name"
@@ -52,8 +58,6 @@ en:
       accept: "Accept"
       rejected: "Rejected"
       cancel: "Cancel"
-  login:
-    name: "Login"
 
   detail:
     choose: "Choose the yard"
@@ -61,7 +65,7 @@ en:
     time: "Time"
     type: "Type"
     comment: "Comment"
-    reply: "reply"
+    reply: "Reply"
     name: "Detail"
 
   district:
@@ -74,18 +78,37 @@ en:
     cl: "Cam Le District"
     hv: "Hoa Vang District"
     hs: "Hoang Sa Archipelago"
-  user:
-    create:
-      success: "Account successfully created"
-      unsuccess: "Account creation failed"
+
+  app_contro:
+    danger: "User not found"
+  user_model:
+    error_type: "must be a PNG or JPG"
+    error_size: "is over 1MB"
+
+  create:
+    success: "Create Success"
+    unsuccess: " Create Account Unsuccess"
+  show:
+    warning: "User does not exist"
+  update:
+    success: "Profile updated"
+  destroy:
+    success: "User Delete"
+  load_user:
+    warning: "User not found!"
+  log_in:
+    danger: "Please login !"
+  search:
+    danger: "Empty data!"
 
   users:
     new:
-      title: "Registration"
-      h1: "Regiter"
-      confirmation: "Confirm password"
-      phone: "Number phone"
-      createAccount: "Create account"
+      newu:
+        title: "Registration"
+        h1: "Regiter"
+        confirmation: "Confirm password"
+        phone: "Number phone"
+        createAccount: "Create account"
 
   shared:
     error_messages:
@@ -109,3 +132,56 @@ en:
       not_exist_id: "Order id not found!"
       update_sucess: "Order processing successfully!"
       update_fail: "Order processing failed!"
+      newu:
+        title: "Sigup"
+        h1: "Signup"
+        confirmation: "Password Confirmation"
+        phone: "Number Phone"
+        createAccount: "Create Account"
+  show:
+    about: "Information"
+    userid: "User Id"
+    name: "Name"
+    email: "Email Address"
+    phone: "Phone Number"
+    changeima: "Change image"
+  edit:
+    title: "Edit"
+    h1: "Edit Form"
+    savechange: "Save change"
+
+  index:
+    title: "List of users"
+    h1: "List of users"
+    delete: "Delete"
+    sure: "You sure"
+
+  asession:
+    show:
+      warning: "No user found"
+
+  sessions:
+    new:
+      news:
+        title: "Log in"
+        h1: "Log in"
+        password: "Password"
+        login: "Login"
+        newuser: "New User?"
+        signup: "Signup"
+        remember: "Remember me"
+        email: "Email address"
+        password: "Password"
+        or: "OR"
+        facebook: "Sign in with Facebook"
+        google: "Sign in with Google"
+  search_view:
+    title: "Seach Yard"
+    h1: "Search Soccer yard"
+  form:
+    name: "Full Name"
+    email: "Email Address"
+    password: "Password"
+    passconfi: "Password confirmation"
+    phone: "Number Phone"
+    image: "Profile photo"

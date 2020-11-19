@@ -4,6 +4,7 @@ class Location < ApplicationRecord
   scope :order_by_name, ->{order :name}
 
   VALID_PHONE_REGEX = /\A\d[0-9]{9}\z/.freeze
+
   validates :name, presence: true,
             length: {maximum: Settings.model.default}
   validates :phone, presence: true,
@@ -12,4 +13,8 @@ class Location < ApplicationRecord
             length: {maximum: Settings.model.default}
   validates :distric, presence: true,
             length: {maximum: Settings.model.default}
+
+  scope :search_name, (lambda do |param|
+    where("lower(name) LIKE :search", search: "%#{param}%") if param
+  end)
 end

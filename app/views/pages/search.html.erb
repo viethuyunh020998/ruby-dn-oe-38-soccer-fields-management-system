@@ -1,0 +1,11 @@
+<% provide(:title, t("search_view.title")) %>
+<% provide(:base_title, t("base.title")) %>
+<div class="col-lg-9">
+  <h1><%= t "search_view.h1"%></h1>
+  <hr>
+  <div class="row">
+    <% @locations.each do |location| %>
+      <%= render partial: "locations/location", locals: {location: location} %>
+    <% end %>
+  </div>
+</div>
