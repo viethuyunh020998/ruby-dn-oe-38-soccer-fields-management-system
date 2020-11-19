@@ -15,6 +15,11 @@ vi:
     description: "Đặc tả"
     save: "Lưu"
 
+    account: "Tài khoản"
+    profile: "Người dùng"
+    setting: "Cài đặt"
+    logout: "Đăng xuất"
+    user: "Người dùng"
   booking:
     name: "Đặt sân"
     yard_name: "Tên sân"
@@ -75,18 +80,50 @@ vi:
     cl: "Quận Cẩm Lệ"
     hv: "Huyện Hoà Vang"
     hs: "Quần đảo Hoàng Sa"
-  user:
-    create:
-      success: "Tao tai khoan thanh cong"
-      unsuccess: " Tao tai khoan khong thanh cong"
+
+  app_contro:
+    danger: "không tìm thấy Người dùng"
+  user_model:
+    error_type: "phải là PNG hoặc JPG"
+    error_size: "là hơn 1MB"
+
+  create:
+    success: "Tạo tài khoản thành công"
+    unsuccess: " Tạo tài khoản không thành công"
+  show:
+    warning: "Người dùng không tồn tại"
+  update:
+    success: "Hồ sơ cá nhân đã cập nhật"
+  destroy:
+    success: "Người dùng đã bị xóa"
+  load_user:
+    warning: "Không tìm thấy người dùng!"
+  log_in:
+    danger: "Vui lòng hãy đăng nhập !"
   users:
     new:
-      title: "Dang ki"
-      h1: "Dang ki"
-      confirmation: "Xac nhan mat khau"
-      phone: "So dien thoai"
-      createAccount: "Tao tai khoan"
-
+      newu:
+        title: "Đăng kí"
+        h1: "Đăng kí"
+        confirmation: "Xác nhận mật khẩu"
+        phone: "Số điện thoại"
+        createAccount: "Tạo tài khoản"
+  show:
+    about: "Thông tin"
+    userid: "User Id"
+    name: "Tên"
+    email: "Địa chỉ Email"
+    phone: "Số điện thoại"
+    changeima: "Thay đổi ảnh"
+  edit:
+    title: "Chinh Sua"
+    h1: "Chinh Sua"
+    savechange: "Luu Thay doi"
+  index:
+    title: "Danh sách người dùng"
+    h1: "Danh sách người dùng"
+    delete: "Xóa"
+    sure: "Bạn chắc chắn"
   shared:
     error_messages:
       contains: The form contains %{errors}
@@ -109,3 +146,21 @@ vi:
       not_exist_id: "Không tìm thấy id đơn hàng"
       update_sucess: "Xử lý đơn hàng thành công"
       update_fail: "Xử lý đơn hàng thất bại"
+      conrains: "Biểu mẫu chứa %{errors}"
+      error: "lỗi"
+  assession:
+    show: "khong tim thay nguoi dung"
+  sessions:
+    new:
+      news:
+        title: "Đăng Nhập"
+        h1: "Đăng Nhập"
+        login: "Đăng Nhập"
+        newuser: "Người dùng mới"
+        signup: "Đăng kí"
+        remember: "Ghi nhớ mật khẩu"
+        email: "địa chỉ email"
+        password: "Mật Khẩu"
+        or: "Hoặc"
+        facebook: "Đăng nhập bằng Facebook"
+        google: "Đăng nhập bằng  Google"
