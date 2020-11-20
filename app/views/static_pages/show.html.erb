@@ -1,0 +1,40 @@
+<% provide(:title, t("detail.name")) %>
+<% provide(:base_title, t("base.title")) %>
+<div class="col-lg-9">
+
+  <!-- slide-->
+  <%= render "slide" %>
+  <div class="row">
+
+    <!-- title yard-->
+    <div class="col-xl-10">
+      <h3><%= @location.name %></h3>
+    </div>
+
+    <!-- Button booking -->
+    <%= render "booking" %>
+
+    <!-- Rating -->
+    <div class="col-xl-12">
+      <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+    </div>
+
+    <!-- Address -->
+    <div class="col-xl-12 location">
+      <p><%= t "home.address"%> <%= @location.address %></p>
+      <p><%= t "home.phone"%> <%= @location.phone %></p>
+    </div>
+
+    <!-- Description -->
+    <div class="col-xl-12">
+      <p class="content-yard">
+        <%= @location.description %>
+      </p>
+    </div>
+
+    <!-- Comment -->
+    <%= render "comment" %>
+
+  </div>
+</div>
+<%= javascript_pack_tag "reply.js" %>
