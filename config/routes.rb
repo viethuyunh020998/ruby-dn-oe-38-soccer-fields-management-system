@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
-    root "static_pages#home"
-    get "/home", to: "static_pages#home"
-    get "/detail", to: "static_pages#detail"
-    get "/order", to: "static_pages#order"
+    root "static_pages#index"
+    get "/home", to: "static_pages#index"
+    resources :static_pages, only: %i(index show)
+
     get "signup", to: "users#new"
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
