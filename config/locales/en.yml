@@ -43,6 +43,7 @@ en:
       detail: "Detail booking"
       status: "Status:"
       date_booking: "Date of booking:"
+      date: "Date:"
       time_booking: "Time of booking:"
       name_booking: "Name of booking:"
       phone_booking: "Phone of booking:"
@@ -167,12 +168,16 @@ en:
       error: "error"
     show_field:
       not_exist_yard: "Field is not found!"
+    booking:
+      pls_login: "You must be logged in to booking yard"
+      booking_succ: "Booking success"
+      booking_fail: "Booking failed"
+      booking_succ_mess: "Thank you for choosing our soccer field!"
+      booking_fail_mess: "There was an error in the system, please try again later!"
 
   asession:
     show:
       danger: "No user found"
-<<<<<<< HEAD
-
   search_view:
     title: "Seach Yard"
     h1: "Search Soccer yard"
@@ -184,8 +189,6 @@ en:
     passconfi: "Password confirmation"
     phone: "Number Phone"
     image: "Profile photo"
-=======
->>>>>>> Show field empty to booking
 
   sessions:
     new:

@@ -43,6 +43,7 @@ vi:
       detail: "Chi tiết đặt sân"
       status: "Trạng thái:"
       date_booking: "Ngày đặt sân:"
+      date: "Ngày:"
       time_booking: "Thời gian đặt sân:"
       name_booking: "Tên người đặt sân:"
       phone_booking: "Số điện thoại:"
@@ -167,6 +168,12 @@ vi:
       error: "lỗi"
     show_field:
       not_exist_yard: "Không tìm thấy id sân bóng!"
+    booking:
+      pls_login: "Bạn phải đăng nhập mới được phép đặt sân"
+      booking_succ: "Đặt sân thành công"
+      booking_fail: "Đặt sân thất bại"
+      booking_succ_mess: "Cảm ơn bạn đã tin tưởng và lựa chọn sân bóng của chúng tôi!"
+      booking_fail_mess: "Hệ thống đã xảy ra lỗi vui lòng thử lại sau!"
 
   asession:
     show:
@@ -183,9 +190,6 @@ vi:
       passcofi: "Xác nhận mật khẩu"
       phone: "Số điện thoại"
       image: "Ảnh đại diện"
-  assession:
-    show:
-      danger: "Không tìm thấy người dùng"
 
   sessions:
     new:
