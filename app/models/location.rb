@@ -12,4 +12,7 @@ class Location < ApplicationRecord
             length: {maximum: Settings.model.default}
   validates :distric, presence: true,
             length: {maximum: Settings.model.default}
+  scope :search_name, (lambda do |param|
+    where("lower(name) LIKE :search", search: "%#{param}%") if param.present?
+  end)
 end

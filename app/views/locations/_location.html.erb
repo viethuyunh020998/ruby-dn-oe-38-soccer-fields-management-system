@@ -3,7 +3,7 @@
     <a href="#"><img class="card-img-top" src="/assets/anh03.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <%= link_to location.name, detail_path %>
+        <%= link_to location.name, static_page_path(id: location.id) %>
       </h4>
       <h6><%= t "home.phone"%><%= location.phone %></h6>
       <p class="card-text"><%= t "home.address" %> <%= location.address %></p>
