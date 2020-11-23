@@ -32,6 +32,7 @@ en:
     price: "Price"
     edit: "Edit"
     new: "New"
+    search: "Seach"
     title_admin:
       image: "Image"
       name: "Name"
@@ -170,6 +171,7 @@ en:
   asession:
     show:
       danger: "No user found"
+<<<<<<< HEAD
 
   search_view:
     title: "Seach Yard"
@@ -182,6 +184,8 @@ en:
     passconfi: "Password confirmation"
     phone: "Number Phone"
     image: "Profile photo"
+=======
+>>>>>>> Show field empty to booking
 
   sessions:
     new:

@@ -38,7 +38,7 @@ end
 
 #Create Location
 20.times do |n|
-  name = "Field " << Faker::Name.name
+  name = Faker::Name.name
   phone= Faker::PhoneNumber.phone_number
   address = Faker::Address.full_address
   district = ["Hai Chau","Thanh Khe","Lien Chieu","Son Tra","Ngu Hanh Son","Cam Le","Hoa Vang"]
@@ -52,12 +52,12 @@ end
 
 #Create Yard
 60.times do |n|
-  [5,7,11].sample
-  code = ["A","B","C","D","E","G"]
+  type=[5,7,11].sample.to_i
+  code = type.to_s+["A","B","C","D","E","G"].sample
   Yard.create!(
   location_id: Location.pluck(:id).sample,
-  code: code.sample,
-  type_yard: [5,7,11].sample.to_i)
+  code: code,
+  type_yard: type)
 end
 
 # Create time_cost
@@ -82,12 +82,13 @@ end
 1.times do |n|
   users = User.limit(10).pluck(:id)
   users.each do |id|
-    status = [0,1,2].sample
+    status = [0,1,2,3].sample
     Booking.create!(
       time_cost_id: TimeCost.pluck(:id).sample,
       user_id: id,
       status: status,
-      note: Faker::Lorem.sentence(word_count: 10)
+      note: Faker::Lorem.sentence(word_count: 10),
+      booking_date: Faker::Date.between(from: '2020-10-23', to: '2020-12-01')
     )
   end
 end

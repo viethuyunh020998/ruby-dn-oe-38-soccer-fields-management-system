@@ -9,9 +9,15 @@ Rails.application.routes.draw do
     get "pages/search", to: "pages#search", as: "search_page"
     resources :users, except: %i(destroy index )
     resources :static_pages, only: %i(index show)
+
     namespace :admin do
       resources :bookings, only: %i(index update)
       resources :locations, except: %i(delete show)
+    end
+
+    namespace :user do
+      resources :bookings, only: %i(index show)
+      get "seach_yard_for_booking", to: "bookings#seach_yard_for_booking"
     end
   end
 end
