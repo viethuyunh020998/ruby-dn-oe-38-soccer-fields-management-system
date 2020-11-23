@@ -33,9 +33,10 @@
     </p>
   </div>
 
-  <!-- Comment -->
-  <div class="row">
-    <%= render "comment" %>
+    <!-- Comment -->
+    <%= render "comments/form" %>
+    <%= render @comments %>
+
   </div>
 </div>
 <%= javascript_pack_tag "reply.js" %>

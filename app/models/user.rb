@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
   has_many :bookings, dependent: :destroy
+  has_many :comments, dependent: :destroy
   enum role: {user: 0, admin: 1}
 
   has_secure_password
