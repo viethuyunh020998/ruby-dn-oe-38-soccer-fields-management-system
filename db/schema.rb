@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 2020_11_19_013035) do
     t.string "name"
     t.string "phone"
     t.string "address"
-    t.string "distric"
+    t.string "district"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

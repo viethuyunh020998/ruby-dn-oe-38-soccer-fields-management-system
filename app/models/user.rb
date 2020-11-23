@@ -8,23 +8,23 @@ class User < ApplicationRecord
 
   before_save :downcase_email
 
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
-  validates :name, presence: true,
-            length: {maximum: Settings.model.user.name_max}
+  # VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
+  # validates :name, presence: true,
+  #           length: {maximum: Settings.model.user.name_max}
 
-  validates :email, presence: true,
-            length: {maximum: Settings.model.user.email_max},
-            format: {with: VALID_EMAIL_REGEX},
-            uniqueness: {case_sensitive: true}
-  validates :phone, presence: true
+  # validates :email, presence: true,
+  #           length: {maximum: Settings.model.user.email_max},
+  #           format: {with: VALID_EMAIL_REGEX},
+  #           uniqueness: {case_sensitive: true}
+  # validates :phone, presence: true
 
-  validates :password, presence: true,
-            length: {minimum: Settings.model.user.password_mini},
-            allow_nil: true
+  # validates :password, presence: true,
+  #           length: {minimum: Settings.model.user.password_mini},
+  #           allow_nil: true
 
-  validate :acceptable_image_type?
+  # validate :acceptable_image_type?
 
-  validate :acceptable_image_size?
+  # validate :acceptable_image_size?
 
   def acceptable_image_type?
     return unless image.attached?
