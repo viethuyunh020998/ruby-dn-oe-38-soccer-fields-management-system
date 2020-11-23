@@ -3,7 +3,7 @@
 <div class="col-lg-9">
   <%= render "slide" %>
   <div class="row">
-    <%= render partial: "location", collection: @locations%>
+    <%= render @locations%>
   </div>
   <%= will_paginate @locations %>
 </div>

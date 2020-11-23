@@ -7,14 +7,12 @@ class Admin::BookingsController < AdminController
   end
 
   def update
-    if @booking.update_status params[:stt]
-      flash[:notice] = t "message.update_booking.update_sucess"
-    else
-      flash[:alert] = t "message.update_booking.update_fail"
-    end
     respond_to do |format|
-      format.html{render admin_bookings_path}
-      format.json{render json: flash.to_hash}
+      if @booking.update_status params[:stt]
+        format.json{render json: @booking, status: :created}
+      else
+        format.json{render status: :unprocessable_entity}
+      end
     end
   end
 

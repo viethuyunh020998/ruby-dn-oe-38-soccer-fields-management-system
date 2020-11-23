@@ -9,9 +9,12 @@ class Booking < ApplicationRecord
   enum status: {pending: 0, accept: 1, rejected: 2, cancel: 3}
 
   scope :status_asc, ->{order status: :asc}
+  scope :date_desc, ->{order created_at: :desc}
   scope :find_date_booking, (lambda do |timecost_ids, date|
-    where("time_cost_id IN (?) AND booking_date = ?
-    AND status = ?", timecost_ids, date, Booking.statuses[:accept])
+    where(
+      "time_cost_id IN (?) AND booking_date = ? AND status = ? OR status = ?",
+      timecost_ids, date, Booking.statuses[:accept], Booking.statuses[:pending]
+    )
   end)
 
   def yard

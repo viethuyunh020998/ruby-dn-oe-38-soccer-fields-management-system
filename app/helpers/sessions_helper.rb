@@ -34,6 +34,10 @@ module SessionsHelper
     session[:forwarding_url] = request.original_url if request.get?
   end
 
+  def strore_location_system url
+    session[:forwarding_url] = url
+  end
+
   def logged_in?
     current_user.present?
   end
