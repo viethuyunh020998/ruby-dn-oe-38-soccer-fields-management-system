@@ -64,6 +64,8 @@ vi:
 
   login:
     name: "Đăng nhập"
+    message: "Vui lòng đăng nhập để bình luận"
+    click: "Nhấp vào đây"
 
   detail:
     choose: "Chọn sân"
@@ -160,6 +162,7 @@ vi:
     update_location: "Địa điểm đã được cập nhật."
     update_fail: "Cập nhật thất bại"
     fail: "Không thể thực hiện yêu cầu, thử lại"
+    comment: "Cảm ơn, bình luận của bạn"
     update_booking:
       not_exist_id: "Không tìm thấy id đơn hàng"
       update_sucess: "Xử lý đơn hàng thành công"
@@ -205,3 +208,6 @@ vi:
         or: "Hoặc"
         facebook: "Đăng nhập bằng Facebook"
         google: "Đăng nhập bằng  Google"
+  time:
+    formats:
+      default: "%d-%m-%Y"

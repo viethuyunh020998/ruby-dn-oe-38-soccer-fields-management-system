@@ -1,5 +1,6 @@
 class Location < ApplicationRecord
   has_many :yards, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
   scope :order_by_name, ->{order :name}
 
@@ -10,7 +11,7 @@ class Location < ApplicationRecord
             format: {with: VALID_PHONE_REGEX}
   validates :address, presence: true,
             length: {maximum: Settings.model.default}
-  validates :distric, presence: true,
+  validates :district, presence: true,
             length: {maximum: Settings.model.default}
   scope :search_name, (lambda do |param|
     where("lower(name) LIKE :search", search: "%#{param}%") if param.present?

@@ -92,3 +92,14 @@ end
     )
   end
 end
+
+1.times do |n|
+  users = User.limit(10).pluck(:id)
+  users.each do |id|
+    Comment.create!(
+      location_id: Location.pluck(:id).sample,
+      user_id: id,
+      content: Faker::Lorem.sentence(word_count: 10)
+    )
+  end
+end
