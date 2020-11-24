@@ -13,3 +13,4 @@ admin_booking:
     pending: "pending"
     accept: "accept"
     rejected: "rejected"
+    cancel: "cancel"

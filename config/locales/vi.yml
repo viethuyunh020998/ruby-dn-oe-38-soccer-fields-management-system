@@ -22,6 +22,11 @@ vi:
     logout: "Đăng xuất"
     user: "Người dùng"
 
+    account: "Tài khoản"
+    profile: "Người dùng"
+    setting: "Cài đặt"
+    logout: "Đăng xuất"
+    user: "Người dùng"
   booking:
     name: "Đặt sân"
     yard_name: "Tên sân"
@@ -54,6 +59,7 @@ vi:
       btn_submit: "Đồng ý"
       btn_cancel: "Hủy đơn"
       btn_exit: "Thoát"
+      phone_yard: "Số điện thoại của sân:"
     btn_handle: "Xử lý"
     btn_view: "Xem"
     status:
@@ -125,6 +131,22 @@ vi:
         phone: "Số điện thoại"
         createAccount: "Tạo tài khoản"
 
+  show:
+    about: "Thông tin"
+    userid: "User Id"
+    name: "Tên"
+    email: "Địa chỉ Email"
+    phone: "Số điện thoại"
+    changeima: "Thay đổi ảnh"
+  edit:
+    title: "Chinh Sua"
+    h1: "Chinh Sua"
+    savechange: "Luu Thay doi"
+  index:
+    title: "Danh sách người dùng"
+    h1: "Danh sách người dùng"
+    delete: "Xóa"
+    sure: "Bạn chắc chắn"
   shared:
     error_messages:
       contains: "Biểu mẫu chứa %{errors}"
@@ -169,6 +191,10 @@ vi:
       update_fail: "Xử lý đơn hàng thất bại"
       contains: "Biểu mẫu chứa %{errors}"
       error: "lỗi"
+      check_current_user: "Sân này không phải do bạn đặt nên bạn không có quyền để hủy nó"
+      check_status: "Đơn hàng dã được admin xử lý."
+      check_status_edit: "Bạn không được phép chỉnh sửa dữ liệu của hệ thống"
+      check_booking_user: "Bạn chưa đặt sân này nên không thể cập nhật"
     show_field:
       not_exist_yard: "Không tìm thấy id sân bóng!"
     booking:
@@ -177,6 +203,7 @@ vi:
       booking_fail: "Đặt sân thất bại"
       booking_succ_mess: "Cảm ơn bạn đã tin tưởng và lựa chọn sân bóng của chúng tôi!"
       booking_fail_mess: "Hệ thống đã xảy ra lỗi vui lòng thử lại sau!"
+      booking_logic: "Bạn không thể đặt chỗ  trước thời gian hiện tại"
 
   asession:
     show:
@@ -211,3 +238,18 @@ vi:
   time:
     formats:
       default: "%d-%m-%Y"
+
+  send_email:
+    link: "Đường dẫn"
+    detail: "Chi tiết"
+    title_booking: "Nhấn vào đường dẫn để xem"
+    greeting_admin: "Xin chào! Quản trị viên."
+    greeting_user: "Xin chào! Người dùng."
+    sub_booking: "Xác nhận đặt sân!"
+    sub_cancel_user: "Thông báo hủy đặt sân từ người dùng!"
+    content_cancel_user: "Người dùng đã hủy bỏ việc đặt sân."
+    sub_cancel_admin: "Thông báo hủy đặt sân từ quản trị viên!"
+    content_cancel_admin: "Quản trị viên đã hủy bỏ việc đặt sân."
+    sub_accept: "Thông báo đặt sân thành công!"
+    sub_reject: "Thông báo về việc từ chối đặt sân từ quản trị viên!"
+    content_reject: "Quản trị viên đã từ chối việc đặt sân của bạn."

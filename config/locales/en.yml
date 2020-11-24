@@ -22,6 +22,11 @@ en:
     logout: "Logout"
     user: "User"
 
+    account: "Account"
+    profile: "Profile"
+    setting: "Setting"
+    logout: "Logout"
+    user: "User"
   booking:
     name: "Booking"
     yard_name: "Yard Name"
@@ -54,6 +59,7 @@ en:
       btn_submit: "Accept"
       btn_cancel: "Reject"
       btn_exit: "Exit"
+      phone_yard: "Phone of field:"
     btn_handle: "Handle"
     btn_view: "View"
     status:
@@ -169,6 +175,10 @@ en:
       update_fail: "Order processing failed!"
       contains: "The form contains %{errors}"
       error: "error"
+      check_current_user: "This course is not reserved by you so you do not have the right to cancel it"
+      check_status: "Orders have been processed by the admin"
+      check_status_edit: "You are not allowed to edit the system data"
+      check_booking_user: "You have not booked this course so you cannot update it"
     show_field:
       not_exist_yard: "Field is not found!"
     booking:
@@ -177,6 +187,7 @@ en:
       booking_fail: "Booking failed"
       booking_succ_mess: "Thank you for choosing our soccer field!"
       booking_fail_mess: "There was an error in the system, please try again later!"
+      booking_logic: "You cannot make a reservation before the current time"
 
   asession:
     show:
@@ -193,11 +204,41 @@ en:
     phone: "Number Phone"
     image: "Profile photo"
 
+  newu:
+    title: "Sigup"
+    h1: "Signup"
+    confirmation: "Password Confirmation"
+    phone: "Number Phone"
+    createAccount: "Create Account"
+  show:
+    about: "Information"
+    userid: "User Id"
+    name: "Name"
+    email: "Email Address"
+    phone: "Phone Number"
+    changeima: "Change image"
+  edit:
+    title: "Edit"
+    h1: "Edit Form"
+    savechange: "Save change"
+
+  index:
+    title: "List of users"
+    h1: "List of users"
+    delete: "Delete"
+    sure: "You sure"
+
+  asession:
+    show:
+      warning: "No user found"
+
+
   sessions:
     new:
       news:
         title: "Log in"
         h1: "Log in"
+        password: "Password"
         login: "Login"
         newuser: "New User?"
         signup: "Signup"
@@ -211,3 +252,18 @@ en:
   time:
     formats:
       default: "%d-%m-%Y"
+
+  send_email:
+    link: "Link"
+    detail: "Detail"
+    title_booking: "Click on the link to view"
+    greeting_admin: "Hello! Admin."
+    greeting_user: "Hello! User."
+    sub_booking: "Confirm reservation!"
+    sub_cancel_user: "Notification cancel booking!"
+    content_cancel_user: "User has canceled a field"
+    sub_cancel_admin: "Notification cancel booking!"
+    content_cancel_admin: "Admin has canceled a field"
+    sub_accept: "Notification booking success!"
+    sub_reject: "Confirm booking failure!"
+    content_reject: "Admin has rejected a field"
