@@ -169,6 +169,10 @@ vi:
       update_fail: "Xử lý đơn hàng thất bại"
       contains: "Biểu mẫu chứa %{errors}"
       error: "lỗi"
+      check_current_user: "Sân này không phải do bạn đặt nên bạn không có quyền để hủy nó"
+      check_status: "Đơn hàng dã được admin xử lý."
+      check_status_edit: "Bạn không được phép chỉnh sửa dữ liệu của hệ thống"
+      check_booking_user: "Bạn chưa đặt sân này nên không thể cập nhật"
     show_field:
       not_exist_yard: "Không tìm thấy id sân bóng!"
     booking:
@@ -177,6 +181,7 @@ vi:
       booking_fail: "Đặt sân thất bại"
       booking_succ_mess: "Cảm ơn bạn đã tin tưởng và lựa chọn sân bóng của chúng tôi!"
       booking_fail_mess: "Hệ thống đã xảy ra lỗi vui lòng thử lại sau!"
+      booking_logic: "Bạn không thể đặt chỗ  trước thời gian hiện tại"
 
   asession:
     show:

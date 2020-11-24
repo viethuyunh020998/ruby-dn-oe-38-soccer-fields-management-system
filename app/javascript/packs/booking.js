@@ -1,11 +1,12 @@
-function handle_booking(date,id_timecost){
+function handle_booking(date,id_timecost,time){
   var token = $('meta[name="csrf-token"]').attr('content')
   $.ajax({
     type: 'POST',
     url: '/user/bookings',
     data: {
       date: date,
-      id_timecost: id_timecost
+      id_timecost: id_timecost,
+      time: time
     },
     headers: {
       "x-csrf-token": token,
@@ -62,7 +63,7 @@ $(document).ready(function() {
       confirmButtonText: 'Đặt sân'
     }).then((result) => {
       if (result.isConfirmed) {
-        handle_booking(date,timecost_id)
+        handle_booking(date,timecost_id,time)
       }
     })
   });

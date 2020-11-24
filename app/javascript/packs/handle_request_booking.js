@@ -1,12 +1,17 @@
-$(document).on('click','.handle-request-booking',function(){
+function ajax_handle_request_booking(url,data)
+{
+  var token = $('meta[name="csrf-token"]').attr('content')
   $.ajax({
     type: 'PATCH',
-    url: "/admin/bookings/"+$(this).data().id,
+    url: url+data.id,
     data: {
-      id: $(this).data().id,
-      stt: $(this).data().stt
+      id: data.id,
+      stt: data.stt
     },
-    dataType: 'JSON'
+    dataType: 'JSON',
+    headers: {
+      "x-csrf-token": token,
+    },
   }).done(function (data) {
     Swal.fire(
       'Xác nhận thành công',
@@ -27,5 +32,13 @@ $(document).on('click','.handle-request-booking',function(){
         location.reload();
       }
     })
+  });
+}
+$(document).ready(function() {
+  $(document).on('click','.handle-request-booking',function(){
+    ajax_handle_request_booking("/admin/bookings/",$(this).data())
+  });
+  $(document).on('click','.handle-cancel-booking',function(){
+    ajax_handle_request_booking("/user/bookings/",$(this).data())
   });
 });
