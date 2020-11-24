@@ -59,6 +59,7 @@ en:
       btn_submit: "Accept"
       btn_cancel: "Reject"
       btn_exit: "Exit"
+      phone_yard: "Phone of field:"
     btn_handle: "Handle"
     btn_view: "View"
     status:
@@ -251,3 +252,18 @@ en:
   time:
     formats:
       default: "%d-%m-%Y"
+
+  send_email:
+    link: "Link"
+    detail: "Detail"
+    title_booking: "Click on the link to view"
+    greeting_admin: "Hello! Admin."
+    greeting_user: "Hello! User."
+    sub_booking: "Confirm reservation!"
+    sub_cancel_user: "Notification cancel booking!"
+    content_cancel_user: "User has canceled a field"
+    sub_cancel_admin: "Notification cancel booking!"
+    content_cancel_admin: "Admin has canceled a field"
+    sub_accept: "Notification booking success!"
+    sub_reject: "Confirm booking failure!"
+    content_reject: "Admin has rejected a field"

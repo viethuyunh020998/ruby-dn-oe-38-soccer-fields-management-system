@@ -59,6 +59,7 @@ vi:
       btn_submit: "Đồng ý"
       btn_cancel: "Hủy đơn"
       btn_exit: "Thoát"
+      phone_yard: "Số điện thoại của sân:"
     btn_handle: "Xử lý"
     btn_view: "Xem"
     status:
@@ -237,3 +238,18 @@ vi:
   time:
     formats:
       default: "%d-%m-%Y"
+
+  send_email:
+    link: "Đường dẫn"
+    detail: "Chi tiết"
+    title_booking: "Nhấn vào đường dẫn để xem"
+    greeting_admin: "Xin chào! Quản trị viên."
+    greeting_user: "Xin chào! Người dùng."
+    sub_booking: "Xác nhận đặt sân!"
+    sub_cancel_user: "Thông báo hủy đặt sân từ người dùng!"
+    content_cancel_user: "Người dùng đã hủy bỏ việc đặt sân."
+    sub_cancel_admin: "Thông báo hủy đặt sân từ quản trị viên!"
+    content_cancel_admin: "Quản trị viên đã hủy bỏ việc đặt sân."
+    sub_accept: "Thông báo đặt sân thành công!"
+    sub_reject: "Thông báo về việc từ chối đặt sân từ quản trị viên!"
+    content_reject: "Quản trị viên đã từ chối việc đặt sân của bạn."
