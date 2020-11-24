@@ -64,6 +64,8 @@ en:
 
   login:
     name: "Login"
+    message: "Please login to comment"
+    click: "Click here"
 
   detail:
     choose: "Choose the yard"
@@ -160,6 +162,7 @@ en:
     update_location: "locations was updated."
     update_fail: "Update fail"
     fail: "Unable to execute request, try again"
+    comment: "Thank, your comment"
     update_booking:
       not_exist_id: "Order id not found!"
       update_sucess: "Order processing successfully!"
@@ -204,3 +207,7 @@ en:
         or: "OR"
         facebook: "Sign in with Facebook"
         google: "Sign in with Google"
+
+  time:
+    formats:
+      default: "%d-%m-%Y"

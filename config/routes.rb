@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     get "pages/search", to: "pages#search", as: "search_page"
     resources :users, except: %i(destroy index )
     resources :static_pages, only: %i(index show)
+    resources :comments, only: %i(create)
 
     namespace :admin do
       resources :bookings, only: %i(index update)

@@ -9,6 +9,8 @@ class StaticPagesController < ApplicationController
   def show
     yards =  @location.yards.pluck(:id)
     @times = TimeCost.all_time(yards).pluck(:time)
+    @comments = @location.comments.newest
+    @comment = Comment.new
   end
 
   private
